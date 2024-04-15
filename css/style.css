@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Rajdhani", sans-serif;
+}
+header {
+    width:100%;
+    height: 90px;
+    background-color:rgb(176, 197, 164,0.7);
+
+}
+.header-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand-logo a img {
+    width:250px;
+    height:100%;
+    display: block;
+    padding-left: 100px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav .links {
+    padding-right: 70px;
+}
+nav ul li a i{
+    display: block;
+    color: white;
+    font-size:30px;
+    padding-left: 50px;
+}
+nav .user-info {
+    display:none;
+    padding-right: 70px;
+    font-size: 20px;
+    
+}
+nav .user-info li a {
+    text-decoration: none;
+    display:block;
+    margin: 0 10px;
+    color: white;
+}
+nav .user-info li {
+    position: relative;
+}
+nav .user-info .badge {
+    position: absolute;
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    background-color:#2C7865;
+    color:white;
+    text-align: center;
+    top:-12px;
+    right:-2px;
+    line-height: 25px;
+} 
+nav .user-info .cart-products {
+    display: none;
+    position: absolute;
+    width: 400px;
+    min-height: 100px;
+    transform: translateX(-200px);
+    padding: 20px;
+    color: white;
+    background-color:#C5EBAA;
+    border-radius: 10px;
+    font-size: 25px;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+.form-section{
+    background-image:url(../images/slider-img.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 500px;
+}
+.form-content {
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+    background-color:rgb(176, 197, 164,0.7);
+    padding: 20px;
+    margin-top:50px;
+}
+.form-section .form-content .form-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-content .form-header img {
+    width:120px;
+    height:120px;
+    border-radius: 50%;
+    display: block;
+    background-color: #2C7865;
+    
+}
+.form-content .form-header h2 {
+    color:#2C7865;
+    font-size: 40px;
+}
+.form-content .form-header p {
+    color:white;
+    margin-bottom: 15px;
+}
+.form-content form input {
+    display: block;
+    width: 80%;
+    margin: auto;
+    height: 45px;
+    outline: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none ;
+    border-bottom: 2px solid #2C7865 ;
+    font-size:18px;
+    color: #2C7865;
+    transition: 0.2s;
+}
+.form-content form input:focus {
+    border-bottom: 3px solid #90D26D;
+}
+.form-content form #login-btn ,.form-content form #register-btn {
+    background-color: #2C7865;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 25px;
+    transition: 0.4s;
+}
+.form-content form #login-btn:hover ,.form-content form #register-btn:hover {
+    background-color:#A4CE95;
+    width: 70%;
+    border: none;
+    color: #2C7865;
+}
+.form-content .ques {
+    text-align: center;
+}
+.form-content .ques a {
+    text-decoration: none;
+    color: #2C7865;
+    font-weight: bold;
+    transition: 0.4s;
+}
+.form-content .ques a:hover {
+    color: white;
+}
+.products {
+    width: 70%;
+    margin: 10px 0;
+}
+.product_item {
+    display: flex;
+    width: 100%;
+    border: 1px solid #ddd;
+    height: 230px;
+    margin-bottom: 10px;
+}
+.product_item_img {
+    width: 40%;
+    margin-right:10px ;
+}
+.product_item_action  {
+    flex:1;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.product_item .add_to_cart {
+    display: block;
+    margin-left: auto;
+    background-color:#2C7865;
+    color: #fff;
+    border: 0;
+    padding: 10px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.product_item .fav {
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    font-size: 20px;
+    color: #90D26D;
+}
+
